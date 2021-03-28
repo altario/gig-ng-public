@@ -1,0 +1,43 @@
+<div class="content">
+
+    <div class="header">
+        <div>
+            <app-generatedcode (generatedCodeOut)=fetchGeneratedObject($event)></app-generatedcode>
+        </div>
+    </div>
+
+    <div class="input-fields">
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="outline">
+                <mat-label>Payment</mat-label>
+                <input matInput formControlName="payment">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Ammount</mat-label>
+                <input matInput formControlName="ammount">
+            </mat-form-field>
+            <button mat-raised-button type="submit" color="primary">
+                <mat-icon>library_add</mat-icon><span>&nbsp;</span>ADD
+            </button>
+
+        </form>
+    </div>
+    <div class="body">
+        <table class="cm-table" border="1" role="presentation">
+            <tr>
+                <td class="cm-td">Payment</td>
+                <td class="cm-td">Ammount</td>
+                <td class="cm-td">Code</td>
+                <td class="cm-td">Grid</td>
+            </tr>
+
+            <tr *ngFor="let row of dataSource">
+                <td class="cm-td">{{row.payment}}</td>
+                <td class="cm-td">{{row.ammount}}</td>
+                <td class="cm-td">{{row.code}}</td>
+                <td class="cm-td">{{row.grid.length}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

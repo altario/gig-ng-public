@@ -33,38 +33,38 @@ The basic idea is that we have a **10x10** grid filled with characters and will 
 |9|a|a|a|a|a|a|a|a|a|a|
 
 
-In this page you have a **button** to start the “generator”. After clicking on this button the grid will be filled with random alphabetic characters (a-z), like so Position [0,1] will have a **“b”** and Position [8,7] will have a **“c”**.
+In this page you have a **button** to start the “generator”. After clicking on this button the grid will be filled with random alphabetic characters (a-z), like so Position [0,1] will have a **“b”** and Position [8,7] will have a **“c”**. **NOT IMPLEMENTED**
 
-If you also find an optional **input** field which allows the user to enter an alphabetic character (a-z) and this character will be used as a weight constant of 20% when filling the grid, like so: If a character is entered and it’s a **“z”**, means that 20% of the grid cells will be filled with **“z”** and the remaining ones with random characters.
+If you also find an optional **input** field which allows the user to enter an alphabetic character (a-z) and this character will be used as a weight constant of 20% when filling the grid, like so: If a character is entered and it’s a **“z”**, means that 20% of the grid cells will be filled with **“z”** and the remaining ones with random characters. **NOT IMPLEMENTED**
 
-The user is only allowed to enter a character **once every 4 seconds**, i.e. user cannot type repeatedly a random character. 
+The user is only allowed to enter a character **once every 4 seconds**, i.e. user cannot type repeatedly a random character. **NOT IMPLEMENTED**
 
 There is a display field underneath the table with the **2 digit code**.
 To populate this field, the following trivial **algorithm** needs to be followed:
 
-1.  Get the 2 digit seconds from the clock, like so: 12:40:36.
+1.  Get the 2 digit seconds from the clock, like so: 12:40:36. **DONE**
     
-2.  Get the matching grid cell values for the positions [3,6] and [6,3], like so: “v” and “c”.
+2.  Get the matching grid cell values for the positions [3,6] and [6,3], like so: “v” and “c”. **DONE**
     
-3.  Count the occurrences of “v” and “c” on the entire grid, like so: v = **7**, c = **9**.
+3.  Count the occurrences of “v” and “c” on the entire grid, like so: v = **7**, c = **9**. **DONE**
     
-4.  If the count is larger than 9, divide the count by the lowest integer possible in order to get a value lower or equal to 9. *roundup the result if decimal.
+4.  If the count is larger than 9, divide the count by the lowest integer possible in order to get a value lower or equal to 9. *roundup the result if decimal. **DONE**
     
-5.  Done! That is your code: **79**
+5.  Done! That is your code: **79** **DONE**
 
-Every 2 seconds the grid needs to be refreshed and a different code will be generated.
+Every 2 seconds the grid needs to be refreshed and a different code will be generated. **DONE**
 
 ## Payments Page
 ![payments page](https://altario-public.s3-eu-west-1.amazonaws.com/payments.jpg)
-In this page you will show the updated **code** on the top (don’t forget, every 2 seconds we have a new code).
+In this page you will show the updated **code** on the top (don’t forget, every 2 seconds we have a new code). **DONE**
 
-There are 2 simple **form fields** to add a payment name and amount and a **button** to add to the payments list.
+There are 2 simple **form fields** to add a payment name and amount and a **button** to add to the payments list. **DONE**
 
-Every entry on the grid will have the current code assigned to it, together with a copy of the grid (yes, the 64 cells).
+Every entry on the grid will have the current code assigned to it, together with a copy of the grid (yes, the 64 cells). **DONE**
 
-This payments list should be ready to be saved to an **API**.
+This payments list should be ready to be saved to an **API**. **NOT IMPLEMENT**
 
-The user should be able to **navigate** between the 2 pages whilst not losing any information i.,e., still see the payments list.
+The user should be able to **navigate** between the 2 pages whilst not losing any information i.,e., still see the payments list. **NOT IMPLEMENT**
 
 
     
