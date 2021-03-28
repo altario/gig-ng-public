@@ -1,0 +1,47 @@
+.content {
+    display: flex;
+    margin: 2% 10%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    height: auto;
+
+}
+
+.footer{
+    display: flex;
+    margin: 1%;
+    height: 100px;
+    flex-direction: column;
+
+}
+
+.cell-border {
+    width: 40px;
+    height: 40px;
+    border: double;
+    text-align: center;
+}
+
+mat-grid-tile {
+    background: lightblue;
+}
+
+.grid {
+
+    width: 30%;
+}

@@ -1,0 +1,30 @@
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.cm-table {
+    width: 50%;
+    text-align: center;
+}
+
+.cm-td {
+    width: 25%;
+}
